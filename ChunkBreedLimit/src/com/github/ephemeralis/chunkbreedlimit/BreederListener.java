@@ -127,6 +127,8 @@ public class BreederListener implements Listener {
 		Player p = event.getPlayer();
 
 		if ((p.getItemInHand().getType() == Material.WHEAT
+				|| p.getItemInHand().getType() == Material.SEEDS
+				|| p.getItemInHand().getType() == Material.CARROT
 				|| p.getItemInHand().getType() == Material.RAW_BEEF
 				|| p.getItemInHand().getType() == Material.PORK
 				|| p.getItemInHand().getType() == Material.COOKED_BEEF || p
