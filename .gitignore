@@ -1,0 +1,6 @@
+/target/classes/
+.settings/
+doc/
+bin/
+.classpath
+.project
