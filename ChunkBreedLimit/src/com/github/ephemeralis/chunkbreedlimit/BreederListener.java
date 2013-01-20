@@ -16,7 +16,6 @@ import org.bukkit.event.player.PlayerInteractEntityEvent;
 
 public class BreederListener implements Listener {
 
-	private ChunkBreedLimit basePlugin;
 	private int spawnCap;
 	private List<EntityType> allowedEntities;
 	private Hashtable<EntityType, Integer> individualCapData;
@@ -35,8 +34,6 @@ public class BreederListener implements Listener {
 
 	public BreederListener(ChunkBreedLimit plugin, int cap,
 			Hashtable<EntityType, Integer> capdata, String bmsg) {
-		// individual entity counting
-		basePlugin = plugin;
 		plugin.getServer().getPluginManager().registerEvents(this, plugin);
 		individualCapData = capdata;
 		breedingFailMessage = bmsg;
